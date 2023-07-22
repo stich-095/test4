@@ -1,0 +1,14 @@
+{% load static %}
+
+
+
+<form action="{% url 'statusRegister' %}" method="post">
+    {% csrf_token %}
+    <label for="username">Nombre de usuario</label>
+    <input type="text" name="username" id="">
+    <label for="password">contraseña</label>
+    <input type="password" name="password" id="">
+    <input type="submit" value="Enviar">
+</form>
+
+<img src="{% static 'img.jpg'  %}" alt="img">
